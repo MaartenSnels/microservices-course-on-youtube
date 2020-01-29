@@ -1,0 +1,12 @@
+<output class="start">user:</output><input [(ngModel)]="user">
+<output class="start">pwd:</output><input [(ngModel)]="pwd" type="password">
+<output class="start">token</output><output class="big">{{token}}</output>
+<output class="start">error</output><output class="big " [ngClass]="!!error ? 'error' : ''">{{error | json}}</output>
+<button class="middle" (click)="createToken()">create token</button>
+<button class="more-middle" *ngIf="token" (click)="clearToken()">clear token</button>
+<button (click)="getUser()">get user</button>
+<output class="start">user</output><output class="big">{{theUser | json }}</output>
+<output class="start">error</output><output class="big" [ngClass]="!!errorUser ? 'error' : ''">{{errorUser | json}}</output>
+<button (click)="getRoles()">get roles</button>
+<output class="start">roles</output><output class="big">{{roles | json }}</output>
+<output class="start">error</output><output class="big " [ngClass]="!!errorRoles ? 'error' : ''">{{errorRoles | json}}</output>

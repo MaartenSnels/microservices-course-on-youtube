@@ -1,0 +1,24 @@
+:host {
+  display: grid;
+  grid-template-columns: 75px 140px 140px 1fr;
+}
+
+.big {
+  grid-column: 2/-1;
+}
+.start {
+  grid-column: 1/2;
+}
+button {
+  grid-column: 2/3;
+}
+.middle {
+  grid-column: 2/3;
+}
+.more-middle {
+  grid-column: 3/4;
+}
+.error {
+  background-color: lightcoral;
+}
+
