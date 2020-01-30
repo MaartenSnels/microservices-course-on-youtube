@@ -16,7 +16,7 @@ interface UserRequest {
   providedIn: 'root'
 })
 export class AuthService {
-  readonly URL = 'http://localhost:8811/authenticate';
+  readonly URL = 'https://localhost:8811/authenticate';
 
   constructor(private httpClient: HttpClient) {}
 
